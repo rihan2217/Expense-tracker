@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import SearchExpense from "./SearchExpense";
+import ExpenseContext from "../context/ExpenseContext";
 
 
-function AddExpense({onAddExpense}){
+function AddExpense(){
 
+
+    const {AddExpenseHandler} = useContext(ExpenseContext);
 
     const [inputname , setInputName] = useState("");
     const [inputdate , setInputDate] = useState("");
@@ -39,7 +42,7 @@ function AddExpense({onAddExpense}){
                 onChange={(e) => setInputAmount(e.target.value)}
                 value={inputamount}/>
                 <button className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700" onClick={() => {
-                    onAddExpense({
+                    AddExpenseHandler({
                         name: inputname,
                         date: inputdate,
                         category: inputcategory,

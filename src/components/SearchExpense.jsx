@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import ThemeContext from '../context/ThemeContext';
+import ExpenseContext from '../context/ExpenseContext';
 
 const SearchExpense = () => {
-  const { SearchExpensebydate, Searchexpensebycategory } = useContext(ThemeContext);
+  const { SearchExpensebydate, Searchexpensebycategory } = useContext(ExpenseContext);
 
   return (
     <div className=" w-full h-[42%] p-4 mb-2 dark:bg-blue-950 text- dark:text-white dark:border-gray-700 border-2 border-blue-400 bg-white rounded">
