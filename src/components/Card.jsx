@@ -21,7 +21,7 @@ const Card = ({ expense }) => {
       </div>
       <div className="mt-3 flex justify-end">
         <button className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm transition-colors duration-200"
-        onClick={()=>{DeleteExpenseHandler(expense.date)}}>
+        onClick={()=>{DeleteExpenseHandler(expense.id)}}>
           Remove
         </button>
       </div>
