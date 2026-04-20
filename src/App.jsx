@@ -27,7 +27,7 @@ function App() {
     <ThemeContext.Provider value={{theme , ToggleTheme}}>
       <ExpenseProvider>
       <Navbar/>
-      <div className="flex items-center justify-around p-4 mb-2 ">
+      <div className="flex flex-col lg:flex-row gap-4 justify-around p-4 mb-2 ">
         <AddExpense />
         <ShowExpense />
       </div>
