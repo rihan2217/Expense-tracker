@@ -16,7 +16,7 @@ const Card = ({ expense }) => {
           <p>Date: {expense.date}</p>
         </div>
         <div className="text-right">
-          <p className="text-xl font-bold text-green-600 dark:text-green-400">${expense.amount}</p>
+          <p className="text-xl font-bold text-green-600 dark:text-green-400">₹{expense.amount}</p>
         </div>
       </div>
       <div className="mt-3 flex justify-end">
